@@ -13,11 +13,12 @@
     var nomi = [' pippo ', ' topolino ', ' pluto'];
     var cognomi = [' bubba ', ' zilli ', 'zola ', ' secoda '];
     var full = []
-    for(var i =0; i < nomi.length; i++){
-      var nomiRnd =nomi[Math.floor(Math.random() * nomi.length)];
-      var cognomiRnd = cognomi[Math.floor(Math.random() * cognomi.length)]
-      console.log(nomiRnd + cognomiRnd);
+    for(var i =0; i < 10; i++){
+      var nomiRnd = nomi[Math.floor(Math.random() * nomi.length)];
+      var cognomiRnd = cognomi[Math.floor(Math.random() * cognomi.length)];
+      full.push(nomiRnd + cognomiRnd);
     }
+    console.log(full);
     </script>
   </body>
 </html>
